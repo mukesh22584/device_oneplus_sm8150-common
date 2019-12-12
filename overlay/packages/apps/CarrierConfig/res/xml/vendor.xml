@@ -3032,4 +3032,15 @@
     <carrier_config gid1="f2330002" mcc="647" mnc="03">
         <string-array name="read_only_apn_types_string_array" num="0" />
     </carrier_config>
+    <carrier_config mcc="505" mnc="03">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
+    <carrier_config mcc="202"  mnc="05">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
 </carrier_config_list>
+
