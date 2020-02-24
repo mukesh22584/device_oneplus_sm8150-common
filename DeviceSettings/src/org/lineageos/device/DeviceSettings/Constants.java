@@ -72,6 +72,10 @@ public class Constants {
     static final String UPDATE_EXTRA_KEYCODE_MAPPING = "keycode_mappings";
     // Broadcast extra: assigned actions (int[]: key = gesture ID, value = action)
     static final String UPDATE_EXTRA_ACTION_MAPPING = "action_mappings";
+    
+    public static final String ACTION_UPDATE_SLIDER_POSITION
+            = "org.lineageos.device.DeviceSettings.UPDATE_SLIDER_POSITION";
+    public static final String EXTRA_SLIDER_POSITION = "position";
 
     static {
         sStringKeyPreferenceMap.put(NOTIF_SLIDER_TOP_KEY, NOTIF_SLIDER_TOP_PREF);
