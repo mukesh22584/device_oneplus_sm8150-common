@@ -85,6 +85,7 @@ ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 # Radio
 DEVICE_PROVISIONED=1
+persist.radio.physical.slot.count=2
 persist.vendor.data.mode=concurrent
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,22
