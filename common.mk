@@ -38,6 +38,9 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
+# FOD animations
+EXTRA_FOD_ANIMATIONS := true
+
 PRODUCT_PACKAGES += \
     otapreopt_script
 
