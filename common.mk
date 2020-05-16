@@ -465,6 +465,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oneplus_msmnile
 
+# TouchGestures
+PRODUCT_PACKAGES += \
+    TouchGestures
+
 # tri-state key
 PRODUCT_PACKAGES += \
     tri-state-key_daemon
