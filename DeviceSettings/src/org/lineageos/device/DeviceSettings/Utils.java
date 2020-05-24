@@ -72,6 +72,9 @@ public class Utils {
         try {
             br = new BufferedReader(new FileReader(filename), 1024);
             line = br.readLine();
+            if (line != null) {
+                line.replaceAll("[^0-9.]", "");
+            }
         } catch (IOException e) {
             return null;
         } finally {
