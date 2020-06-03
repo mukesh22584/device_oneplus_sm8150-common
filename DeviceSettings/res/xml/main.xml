@@ -12,6 +12,23 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
+        android:key="gestures"
+        android:title="@string/screen_gestures_panel_title">
+
+        <Preference
+            android:key="touchscreen_gesture_settings"
+            android:icon="@drawable/rr_gestures_icon"
+            android:persistent="false"
+            android:title="@string/touchscreen_gesture_settings_title"
+            android:summary="@string/touchscreen_gesture_settings_summary">
+            <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.touch.gestures"
+                    android:targetClass="com.android.touch.gestures.TouchscreenGestureSettings" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="graphics"
         android:title="@string/display_title">
 
@@ -75,23 +92,6 @@
           android:summary="%s"
           android:entries="@array/notification_slider_action_entries"
           android:entryValues="@array/notification_slider_action_entry_values" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="gestures"
-        android:title="@string/screen_gestures_panel_title">
-
-        <Preference
-            android:key="touchscreen_gesture_settings"
-            android:icon="@drawable/rr_gestures_icon"
-            android:persistent="false"
-            android:title="@string/touchscreen_gesture_settings_title"
-            android:summary="@string/touchscreen_gesture_settings_summary">
-            <intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.touch.gestures"
-                    android:targetClass="com.android.touch.gestures.TouchscreenGestureSettings" />
-        </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory

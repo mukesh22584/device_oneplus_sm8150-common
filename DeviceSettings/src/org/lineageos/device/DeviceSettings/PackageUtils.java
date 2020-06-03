@@ -28,7 +28,7 @@ public class PackageUtils {
             return true;
         } catch (Exception e) {
             return false;
-        }//ag
+        }
     }
 
     public static boolean isAvailableApp(String packageName, Context context) {
