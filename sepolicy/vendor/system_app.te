@@ -21,3 +21,5 @@ set_prop(system_app, powerctl_prop)
 
 # allow system_app to interact with pasr hal
 hal_client_domain(system_app, hal_pasrmanager)
+
+r_dir_file(system_app, sysfs_battery_supply)
