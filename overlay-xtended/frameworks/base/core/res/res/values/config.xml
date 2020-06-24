@@ -81,5 +81,8 @@
 
     <!-- Whether device supports variable refresh rate -->
     <bool name="config_hasVariableRefreshRate">true</bool>
+ 
+    <!-- Whether device supports 90hz refresh rate -->
+    <integer name="config_defaultPeakRefreshRate">90</integer>
 
 </resources>
