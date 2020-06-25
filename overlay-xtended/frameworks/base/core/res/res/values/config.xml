@@ -85,4 +85,7 @@
     <!-- Whether device supports 90hz refresh rate -->
     <integer name="config_defaultPeakRefreshRate">90</integer>
 
+    <!-- Whether device supports an alt. ambient display -->
+    <bool name="config_alt_ambient_display">true</bool>
+
 </resources>
