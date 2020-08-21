@@ -4265,24 +4265,14 @@ case "$target" in
 
 	# configure governor settings for gold cluster
 	echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
-	echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
-	echo 1612800 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
 
 	# configure governor settings for gold+ cluster
 	echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
-	echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
-	echo 1612800 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
 
 	# configure input boost settings
-	echo "0:1324800 1:1324800 2:1324800 3:1324800 4:1036800 5:1036800 6:1036800 7:825800" > /sys/module/cpu_boost/parameters/input_boost_freq
-	echo 100 > /sys/module/cpu_boost/parameters/input_boost_ms
-
-	#set LMK tweaks
-	echo  "14936,29872,44808,59744,74680,89616" > /sys/module/lowmemorykiller/parameters/minfree
+	echo "0:1785000 1:1785000 2:1785000 3:1785000 4:1497800 5:1497800 6:1497800 7:825800" > /sys/module/cpu_boost/parameters/input_boost_freq
   
         # set default schedTune value for foreground/top-app
         echo 1 >  /dev/stune/foreground/schedtune.prefer_idle
