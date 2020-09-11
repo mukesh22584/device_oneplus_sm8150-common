@@ -512,6 +512,13 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service \
 
+#VNDK
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+    
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
