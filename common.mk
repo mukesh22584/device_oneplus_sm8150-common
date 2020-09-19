@@ -523,6 +523,10 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
     
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-lite-vendorcompat \
+    libprotobuf-cpp-full-vendorcompat
+        
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
