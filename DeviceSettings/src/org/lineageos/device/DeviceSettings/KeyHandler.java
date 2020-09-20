@@ -65,8 +65,7 @@ public class KeyHandler implements DeviceKeyHandler {
     private static String FPNAV_ENABLED_PROP = "sys.fpnav.enabled";
     private static String NIGHT_MODE_ENABLED_PROP = "sys.night_mode.enabled";
     private static String NIGHT_MODE_COLOR_TEMPERATURE_PROP = "sys.night_mode.color_temperature";
-    private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
-
+ 
     private static final SparseIntArray sSupportedSliderZenModes = new SparseIntArray();
     private static final SparseIntArray sSupportedSliderRingModes = new SparseIntArray();
     static {
@@ -85,9 +84,6 @@ public class KeyHandler implements DeviceKeyHandler {
 
     public static final String CLIENT_PACKAGE_NAME = "com.oneplus.camera";
     public static final String CLIENT_PACKAGE_PATH = "/data/misc/xtended/client_package_name";
-
-    // Single tap key code
-    private static final int SINGLE_TAP = 67;
 
     private final Context mContext;
     private final PowerManager mPowerManager;
@@ -208,12 +204,7 @@ public class KeyHandler implements DeviceKeyHandler {
     public KeyEvent handleKeyEvent(KeyEvent event) {
         int scanCode = event.getScanCode();
         String keyCode = Constants.sKeyMap.get(scanCode);
-
-        if (scanCode == SINGLE_TAP) {
-            launchDozePulse();
-            return null;
-        }
-        
+    
         int keyCodeValue = 0;
         try {
             keyCodeValue = Constants.getPreferenceInt(mContext, keyCode);
@@ -296,11 +287,5 @@ public class KeyHandler implements DeviceKeyHandler {
                 }
             }
         }
-    }
-
-    private void launchDozePulse() {
-        // Note: Only works with ambient display enabled.
-        mContext.sendBroadcastAsUser(new Intent(DOZE_INTENT),
-                new UserHandle(UserHandle.USER_CURRENT));
     }
 }
