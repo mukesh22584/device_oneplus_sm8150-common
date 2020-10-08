@@ -412,14 +412,7 @@
 
     <!-- Whether key handler sends intent when changing slider position -->
     <string name="config_alertSliderIntent">org.lineageos.device.DeviceSettings.UPDATE_SLIDER_POSITION</string>
-    
-    <!-- Display 90Hz blacklist. Apps that do not work well when the display refreshes at 90Hz.
-         When these apps are visible, the display's refresh rate gets fixed to 60Hz. -->
-    <string-array name="config_highRefreshRateBlacklist">
-        <item>com.touchtype.swiftkey.beta</item>
-        <item>com.touchtype.swiftkey</item>
-    </string-array>
-
+  
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
          where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
