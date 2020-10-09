@@ -13,8 +13,7 @@ persist.vendor.color.matrix    u:object_r:vendor_display_prop:s0
 ro.boot.ftm_mode    u:object_r:exported_default_prop:s0
 
 # Memplus
-persist.vendor.memplus.              u:object_r:exported_system_prop:s0
-vendor.sys.memplus.postboot       u:object_r:vendor_memplus_prop:s0
+persist.vendor.sys.memplus.    u:object_r:vendor_memplus_prop:s0
 
 # NFC
 persist.vendor.nfc.        u:object_r:vendor_nfc_prop:s0
@@ -44,8 +43,6 @@ persist.vendor.sensors.enable.mag_filter         u:object_r:vendor_sensors_prop:
 persist.vendor.sensors.light.location_x          u:object_r:vendor_sensors_prop:s0
 persist.vendor.sensors.light.location_y          u:object_r:vendor_sensors_prop:s0
 persist.vendor.sensors.proximity.using_motion    u:object_r:vendor_sensors_prop:s0
-sys.night_mode.enabled                           u:object_r:powerctl_prop:s0
-sys.night_mode.color_temperature                 u:object_r:powerctl_prop:s0
 
 # Thermal
 vendor.thermal.config      u:object_r:vendor_thermal_prop:s0
